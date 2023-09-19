@@ -42,7 +42,27 @@ O projeto DevBank segue os princípios do padrão REST, que inclui a utilizaçã
 
 ## Instalação
 
-1. **Clone o Repositório**:
+1. **Instale o Visual Studio Code (VS Code)**:
+    
+    Se você ainda não tem o Visual Studio Code instalado, você pode baixá-lo gratuitamente no site oficial: **https://code.visualstudio.com/**.    
+    O VS Code é um ambiente de desenvolvimento integrado (IDE) muito popular que é altamente recomendado para desenvolvimento em Node.js.
+    
+2. **Instale o Insomnia**:
+    
+    O Insomnia é uma ferramenta para testar APIs RESTful. Você pode baixá-lo gratuitamente no site oficial: **https://insomnia.rest/download**.    
+    O Insomnia permite que você faça requisições à API e visualize as respostas, o que será útil para testar as funcionalidades da API DevBank.
+
+3. **Instale o Node.js**:
+
+    Certifique-se de ter o Node.js instalado no seu sistema. Você pode baixá-lo em nodejs.org. Verifique a instalação executando os comandos no terminal:
+
+    Copy code
+    node -v
+    npm -v
+    Isso deve exibir as versões do Node.js e do npm instaladas no seu sistema.
+
+   
+4. **Clone o Repositório**:
     
     Primeiro, você precisa clonar o repositório DevBank para o seu computador. Abra o terminal do VS Code e execute o seguinte comando:
     
@@ -52,7 +72,7 @@ O projeto DevBank segue os princípios do padrão REST, que inclui a utilizaçã
     
     Isso irá criar uma cópia do repositório na sua máquina.
     
-2. **Instale as Dependências**:
+5. **Instale as Dependências**:
     
     Navegue até o diretório do projeto DevBank que você acabou de clonar:
     
@@ -68,15 +88,6 @@ O projeto DevBank segue os princípios do padrão REST, que inclui a utilizaçã
     
     Isso instalará todas as bibliotecas e pacotes necessários para executar a aplicação.
     
-3. **Instale o Visual Studio Code (VS Code)**:
-    
-    Se você ainda não tem o Visual Studio Code instalado, você pode baixá-lo gratuitamente no site oficial: **https://code.visualstudio.com/**.    
-    O VS Code é um ambiente de desenvolvimento integrado (IDE) muito popular que é altamente recomendado para desenvolvimento em Node.js.
-    
-4. **Instale o Insomnia**:
-    
-    O Insomnia é uma ferramenta para testar APIs RESTful. Você pode baixá-lo gratuitamente no site oficial: **https://insomnia.rest/download**.    
-    O Insomnia permite que você faça requisições à API e visualize as respostas, o que será útil para testar as funcionalidades da API DevBank.
     
 
 Após seguir esses passos, você estará pronto para iniciar o desenvolvimento e testar a API DevBank no ambiente configurado. Certifique-se de estar no diretório do projeto DevBank no VS Code ao iniciar o desenvolvimento.
