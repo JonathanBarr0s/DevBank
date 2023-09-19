@@ -56,9 +56,10 @@ O projeto DevBank segue os princípios do padrão REST, que inclui a utilizaçã
 
     Certifique-se de ter o Node.js instalado no seu sistema. Você pode baixá-lo em **https://nodejs.org/en/download**. Verifique a instalação executando os comandos no terminal:
 
-    Copy code
+     ```bash
     node -v
     npm -v
+     ```
     Isso deve exibir as versões do Node.js e do npm instaladas no seu sistema.
 
    
