@@ -1,0 +1,339 @@
+{
+    "_type": "export",
+    "__export_format": 4,
+    "__export_date": "2023-09-19T23:21:00.189Z",
+    "__export_source": "insomnia.desktop.app:v2023.5.8",
+    "resources": [
+        {
+            "_id": "req_b293e65489e04508bff1b458191a2ce2",
+            "parentId": "fld_c9e1bd9970ee4411a08f9696f999312d",
+            "modified": 1695163750566,
+            "created": 1693929978775,
+            "url": "http://localhost:3000/contas?senha_banco=Dev123Bank",
+            "name": "Listar contas bancárias",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "Insomnia/2023.5.7"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1694020686338,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "fld_c9e1bd9970ee4411a08f9696f999312d",
+            "parentId": "wrk_28df88b118eb409f8c39fdba2dc69a3d",
+            "modified": 1695164703006,
+            "created": 1693929959951,
+            "name": "Dev Bank",
+            "description": "",
+            "environment": {},
+            "environmentPropertyOrder": null,
+            "metaSortKey": -1693929959951,
+            "_type": "request_group"
+        },
+        {
+            "_id": "wrk_28df88b118eb409f8c39fdba2dc69a3d",
+            "parentId": null,
+            "modified": 1692835317332,
+            "created": 1692835317332,
+            "name": "My Collection",
+            "description": "",
+            "scope": "collection",
+            "_type": "workspace"
+        },
+        {
+            "_id": "req_0a47756977b4433e9d88d461b8efe997",
+            "parentId": "fld_c9e1bd9970ee4411a08f9696f999312d",
+            "modified": 1695165424278,
+            "created": 1693930965403,
+            "url": "http://localhost:3000/contas",
+            "name": "Criar conta bancária",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\t\"nome\": \"João Santos\",\n\t\t\"cpf\": \"34582088872\",\n\t\t\"data_nascimento\": \"1997-04-12\",\n\t\t\"telefone\": \"11978458956\",\n\t\t\"email\": \"joao.santos@hotmail.com\",\n\t\t\"senha\": \"123456789\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Insomnia/2023.5.7"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1694020686334.875,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_acd031a5cc124d7a884272ed550d097e",
+            "parentId": "fld_c9e1bd9970ee4411a08f9696f999312d",
+            "modified": 1695165604702,
+            "created": 1693954809939,
+            "url": "http://localhost:3000/contas/1/usuario",
+            "name": "Atualizar usuário da conta bancária",
+            "description": "",
+            "method": "PUT",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\t\"nome\": \"João Souza\",\n\t\t\"cpf\": \"39797015815\",\n\t\t\"data_nascimento\": \"1998-09-20\",\n\t\t\"telefone\": \"11956891245\",\n\t\t\"email\": \"joao.souza@hotmail.com\",\n\t\t\"senha\": \"123456789\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Insomnia/2023.5.7"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1694020686333.3125,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_578fb121269844889912960ea40f7d87",
+            "parentId": "fld_c9e1bd9970ee4411a08f9696f999312d",
+            "modified": 1694115544544,
+            "created": 1693959760510,
+            "url": "http://localhost:3000/contas/2",
+            "name": "Excluir Conta",
+            "description": "",
+            "method": "DELETE",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "Insomnia/2023.5.7"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1694020686332.5312,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_53e8adf47006433487cdf46caf637265",
+            "parentId": "fld_c9e1bd9970ee4411a08f9696f999312d",
+            "modified": 1694117293099,
+            "created": 1693964135490,
+            "url": "http://localhost:3000/transacoes/depositar",
+            "name": "Depositar",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"numero_conta\": \"1\",\n\t\"valor\": 500\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Insomnia/2023.5.7"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1694020686332.1406,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_6199e40ef17f417999a09aac235ab961",
+            "parentId": "fld_c9e1bd9970ee4411a08f9696f999312d",
+            "modified": 1694116010053,
+            "created": 1694008018898,
+            "url": "http://localhost:3000/transacoes/sacar",
+            "name": "Sacar",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"numero_conta\": \"1\",\n\t\"valor\": 500,\n  \"senha\": \"123456789\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Insomnia/2023.5.7"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1694020686331.9453,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_4f475594cf8c44bda6b3818594d7f2bc",
+            "parentId": "fld_c9e1bd9970ee4411a08f9696f999312d",
+            "modified": 1694115939011,
+            "created": 1694010121956,
+            "url": "http://localhost:3000/transacoes/transferir",
+            "name": "Transferência ",
+            "description": "",
+            "method": "POST",
+            "body": {
+                "mimeType": "application/json",
+                "text": "{\n\t\"numero_conta_origem\": \"2\",\n\t\"numero_conta_destino\": \"1\",\n\t\"valor\": 500,\n\t\"senha\": \"123456789\"\n}"
+            },
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Insomnia/2023.5.7"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1694020686331.8477,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_ff4e15c50a9a40b5bd1533aac9c27ec1",
+            "parentId": "fld_c9e1bd9970ee4411a08f9696f999312d",
+            "modified": 1694116122096,
+            "created": 1694010901013,
+            "url": "http://localhost:3000/contas/saldo?numero_conta=1&senha=123456789",
+            "name": "Saldo",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "Insomnia/2023.5.7"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1694020686331.7988,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "req_95a78f7c705449adae7192d425a9e7f5",
+            "parentId": "fld_c9e1bd9970ee4411a08f9696f999312d",
+            "modified": 1694116251398,
+            "created": 1694020686238,
+            "url": "http://localhost:3000/contas/extrato?numero_conta=1&senha=123456789",
+            "name": "Extrato",
+            "description": "",
+            "method": "GET",
+            "body": {},
+            "parameters": [],
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "Insomnia/2023.5.7"
+                }
+            ],
+            "authentication": {},
+            "metaSortKey": -1694020686331.75,
+            "isPrivate": false,
+            "settingStoreCookies": true,
+            "settingSendCookies": true,
+            "settingDisableRenderRequestBody": false,
+            "settingEncodeUrl": true,
+            "settingRebuildPath": true,
+            "settingFollowRedirects": "global",
+            "_type": "request"
+        },
+        {
+            "_id": "env_1734be4e9f822000d18582266430c16108699e3a",
+            "parentId": "wrk_28df88b118eb409f8c39fdba2dc69a3d",
+            "modified": 1692835317335,
+            "created": 1692835317335,
+            "name": "Base Environment",
+            "data": {},
+            "dataPropertyOrder": null,
+            "color": null,
+            "isPrivate": false,
+            "metaSortKey": 1692835317335,
+            "_type": "environment"
+        },
+        {
+            "_id": "jar_1734be4e9f822000d18582266430c16108699e3a",
+            "parentId": "wrk_28df88b118eb409f8c39fdba2dc69a3d",
+            "modified": 1692835317336,
+            "created": 1692835317336,
+            "name": "Default Jar",
+            "cookies": [],
+            "_type": "cookie_jar"
+        }
+    ]
+}
