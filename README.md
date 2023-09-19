@@ -40,6 +40,48 @@ Para garantir uma comunicação eficaz entre a API e os clientes, foram utilizad
 
 O projeto DevBank segue os princípios do padrão REST, que inclui a utilização de endpoints claramente definidos para cada recurso, ações consistentes baseadas em verbos HTTP e o uso de códigos de status adequados para indicar o resultado das operações. Isso torna a API fácil de entender, manter e expandir.
 
+## Instalação
+
+1. **Clone o Repositório**:
+    
+    Primeiro, você precisa clonar o repositório DevBank para o seu computador. Abra o terminal do VS Code e execute o seguinte comando:
+    
+    ```bash
+    git clone https://github.com/seu-usuario/devbank.git
+    ```
+    
+    Isso irá criar uma cópia do repositório na sua máquina.
+    
+2. **Instale as Dependências**:
+    
+    Navegue até o diretório do projeto DevBank que você acabou de clonar:
+    
+    ```bash
+    cd devbank
+    ```
+    
+    Em seguida, instale todas as dependências do projeto usando o npm (Node Package Manager). Execute o seguinte comando:
+    
+    ```bash
+    npm install    
+    ```
+    
+    Isso instalará todas as bibliotecas e pacotes necessários para executar a aplicação.
+    
+3. **Instale o Visual Studio Code (VS Code)**:
+    
+    Se você ainda não tem o Visual Studio Code instalado, você pode baixá-lo gratuitamente no site oficial: **https://code.visualstudio.com/**.    
+    O VS Code é um ambiente de desenvolvimento integrado (IDE) muito popular que é altamente recomendado para desenvolvimento em Node.js.
+    
+4. **Instale o Insomnia**:
+    
+    O Insomnia é uma ferramenta para testar APIs RESTful. Você pode baixá-lo gratuitamente no site oficial: **https://insomnia.rest/download**.    
+    O Insomnia permite que você faça requisições à API e visualize as respostas, o que será útil para testar as funcionalidades da API DevBank.
+    
+
+Após seguir esses passos, você estará pronto para iniciar o desenvolvimento e testar a API DevBank no ambiente configurado. Certifique-se de estar no diretório do projeto DevBank no VS Code ao iniciar o desenvolvimento.
+
+
 
 
 
