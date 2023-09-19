@@ -63,10 +63,8 @@ Aqui estão os passos para configurar o ambiente e executar o projeto DevBank:
     Para obter o código-fonte do projeto DevBank no seu computador, siga estas etapas:
     
     ```bash
-    git clone https://github.com/seu-usuario/devbank.git
+    git clone https://github.com/JonathanBarr0s/DevBank.git
     ```
-    
-    Certifique-se de substituir **`seu-usuario`** pelo seu nome de usuário no GitHub, se aplicável.
     
 4. **Instale o Node.js:**
     
