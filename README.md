@@ -40,7 +40,7 @@ Para garantir uma comunicação eficaz entre a API e os clientes, foram utilizad
 
 O projeto DevBank segue os princípios do padrão REST, que inclui a utilização de endpoints claramente definidos para cada recurso, ações consistentes baseadas em verbos HTTP e o uso de códigos de status adequados para indicar o resultado das operações. Isso torna a API fácil de entender, manter e expandir.
 
-# **Instalação**
+## Instalação
 
 Aqui estão os passos para configurar o ambiente e executar o projeto DevBank:
 
