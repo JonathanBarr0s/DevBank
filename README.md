@@ -17,3 +17,27 @@ O DevBank é um Banco Digital que oferece uma API RESTful com os seguintes recur
 - **Extrato:** Oferece um relatório detalhado das transações realizadas em uma conta bancária específica, após verificar a validade da senha.
 
 **Status do Projeto:** Concluído e funcionando perfeitamente.
+
+## Objetivo
+
+Para alcançar os objetivos do projeto, foram utilizadas tecnologias modernas e práticas de desenvolvimento de APIs RESTful. Algumas das tecnologias e conceitos empregados incluem:
+
+1. **Node.js**: A API foi desenvolvida em Node.js, uma plataforma de código aberto para execução de JavaScript no servidor, que permite a construção de aplicações escaláveis e eficientes.
+2. **Express.js**: O framework Express.js foi utilizado para simplificar a criação das rotas da API, gerenciar middlewares e facilitar o tratamento das requisições HTTP.
+3. **JSON**: O formato JSON (JavaScript Object Notation) é amplamente utilizado para a troca de dados entre a API e os clientes, devido à sua simplicidade e facilidade de leitura.
+4. **REST (Representational State Transfer)**: A API segue o padrão REST, que define um conjunto de princípios para a criação de serviços web escaláveis e flexíveis. Isso inclui o uso adequado de verbos HTTP (GET, POST, PUT, DELETE) e a organização dos recursos em endpoints.
+
+### **Códigos de Requisição HTTP**
+
+Para garantir uma comunicação eficaz entre a API e os clientes, foram utilizados os seguintes códigos de requisição HTTP:
+
+- **GET**: Utilizado para recuperar informações de contas bancárias, saldos, extratos e listar contas existentes.
+- **POST**: Usado para criar novas contas bancárias, realizar depósitos, saques e transferências, bem como atualizar os dados do usuário da conta.
+- **PUT**: Empregado para atualizar os dados do usuário da conta bancária.
+- **DELETE**: Utilizado para excluir uma conta bancária existente.
+
+### **Padrão REST**
+
+O projeto DevBank segue os princípios do padrão REST, que inclui a utilização de endpoints claramente definidos para cada recurso, ações consistentes baseadas em verbos HTTP e o uso de códigos de status adequados para indicar o resultado das operações. Isso torna a API fácil de entender, manter e expandir.
+
+Em resumo, o objetivo do projeto DevBank é criar uma API bancária eficiente e segura, seguindo as melhores práticas de desenvolvimento de APIs RESTful. Com a base estabelecida neste projeto piloto, será possível adicionar novas funcionalidades e melhorias no futuro, atendendo às necessidades de um banco digital em constante evolução.
