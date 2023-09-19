@@ -63,7 +63,7 @@ O projeto DevBank segue os princípios do padrão REST, que inclui a utilizaçã
     Isso deve exibir as versões do Node.js e do npm instaladas no seu sistema.
 
    
-4. **Clone o Repositório**:
+4. **Clone o Repositório**: AARRRRRUUUUUMMMMMAAAARRRR
     
     Primeiro, você precisa clonar o repositório DevBank para o seu computador. Abra o terminal do VS Code e execute o seguinte comando:
     
