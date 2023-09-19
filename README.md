@@ -79,7 +79,7 @@ Aqui estão os passos para configurar o ambiente e executar o projeto DevBank:
     
 5. **Instale as Dependências do Projeto:**
     
-    Navegue até o diretório do projeto DevBank que você clonou no passo 1 e execute o seguinte comando para instalar as dependências do projeto:
+    Navegue até o diretório do projeto DevBank que você clonou no passo 3 e execute o seguinte comando para instalar as dependências do projeto:
     
     ```
     npm install
