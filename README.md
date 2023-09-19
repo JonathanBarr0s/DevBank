@@ -40,58 +40,81 @@ Para garantir uma comunicação eficaz entre a API e os clientes, foram utilizad
 
 O projeto DevBank segue os princípios do padrão REST, que inclui a utilização de endpoints claramente definidos para cada recurso, ações consistentes baseadas em verbos HTTP e o uso de códigos de status adequados para indicar o resultado das operações. Isso torna a API fácil de entender, manter e expandir.
 
-## Instalação
+# **Instalação**
 
-1. **Instale o Visual Studio Code (VS Code)**:
+Aqui estão os passos para configurar o ambiente e executar o projeto DevBank:
+
+1. **Instale o Visual Studio Code:**
     
-    Se você ainda não tem o Visual Studio Code instalado, você pode baixá-lo gratuitamente no site oficial: **https://code.visualstudio.com/**.    
-    O VS Code é um ambiente de desenvolvimento integrado (IDE) muito popular que é altamente recomendado para desenvolvimento em Node.js.
+    O Visual Studio Code (VS Code) é um ambiente de desenvolvimento altamente recomendado para trabalhar com o código-fonte do projeto DevBank. Você pode baixá-lo em **[code.visualstudio.com](https://code.visualstudio.com/)**.
     
-2. **Instale o Insomnia**:
+2. **Instale o Insomnia:**
     
-    O Insomnia é uma ferramenta para testar APIs RESTful. Você pode baixá-lo gratuitamente no site oficial: **https://insomnia.rest/download**.    
-    O Insomnia permite que você faça requisições à API e visualize as respostas, o que será útil para testar as funcionalidades da API DevBank.
-
-3. **Instale o Node.js**:
-
-    Certifique-se de ter o Node.js instalado no seu sistema. Você pode baixá-lo em **https://nodejs.org/en/download**. Verifique a instalação executando os comandos no terminal:
-
-     ```bash
+    O Insomnia é uma ferramenta útil para testar APIs REST. Você pode baixá-lo em **[insomnia.rest/download](https://insomnia.rest/download/)**.
+    
+    Após a instalação, você pode importar as configurações de ambiente e as requisições do projeto DevBank para o Insomnia.
+    
+    - Abra o Insomnia.
+    - No menu superior, vá em "File" -> "Import/Export" -> "Import Data" -> "From File".
+    - Navegue até o diretório do projeto DevBank e selecione o arquivo **`insomnia_export.json`**.
+    - As configurações e requisições do projeto serão importadas.
+3. **Clone o Repositório:**
+    
+    Para obter o código-fonte do projeto DevBank no seu computador, siga estas etapas:
+    
+    ```bash
+    git clone https://github.com/seu-usuario/devbank.git
+    ```
+    
+    Certifique-se de substituir **`seu-usuario`** pelo seu nome de usuário no GitHub, se aplicável.
+    
+4. **Instale o Node.js:**
+    
+    Certifique-se de ter o Node.js instalado no seu sistema. Você pode baixá-lo em **[nodejs.org](https://nodejs.org/)**. Verifique a instalação executando os comandos no terminal:
+    
+    ```
     node -v
     npm -v
-     ```
+    ```
+    
     Isso deve exibir as versões do Node.js e do npm instaladas no seu sistema.
+    
+5. **Instale as Dependências do Projeto:**
+    
+    Navegue até o diretório do projeto DevBank que você clonou no passo 1 e execute o seguinte comando para instalar as dependências do projeto:
+    
+    ```
+    npm install
+    ```
+    
+6. **Instale o Nodemon (Development Dependency):**
+    
+    O Nodemon é uma ferramenta que ajuda a desenvolver aplicativos baseados em Node.js reiniciando automaticamente o servidor quando ocorrem alterações no código. Instale-o como uma dependência de desenvolvimento com o seguinte comando:
+    
+    ```mathematica
+    npm install -D nodemon
+    ```
+    
+7. **Instale a Biblioteca date-fns (Dependency):**
+    
+    A biblioteca date-fns é utilizada para manipulação de datas no projeto DevBank. Instale-a como uma dependência com o seguinte comando:
+    
+    ```lua
+    npm install date-fns --save
+    ```
+    
+8. **Execute o Projeto:**
+    
+    Agora, você está pronto para executar o projeto DevBank. Utilize o seguinte comando para iniciar o servidor:
+    
+    ```arduino
+    npm run dev
+    ```
+    
+    O Nodemon será responsável por reiniciar automaticamente o servidor sempre que você fizer alterações no código, facilitando o processo de desenvolvimento.
+    
 
-   
-4. **Clone o Repositório**: AARRRRRUUUUUMMMMMAAAARRRR
-    
-    Primeiro, você precisa clonar o repositório DevBank para o seu computador. Abra o terminal do VS Code e execute o seguinte comando:
-    
-    ```bash
-    git clone https://github.com/JonathanBarr0s/DevBank.git
-    ```
-    
-    Isso irá criar uma cópia do repositório na sua máquina.
-    
-5. **Instale as Dependências**:
-    
-    Navegue até o diretório do projeto DevBank que você acabou de clonar:
-    
-    ```bash
-    cd devbank
-    ```
-    
-    Em seguida, instale todas as dependências do projeto usando o npm (Node Package Manager). Execute o seguinte comando:
-    
-    ```bash
-    npm install    
-    ```
-    
-    Isso instalará todas as bibliotecas e pacotes necessários para executar a aplicação.
-    
-    
-
-Após seguir esses passos, você estará pronto para iniciar o desenvolvimento e testar a API DevBank no ambiente configurado. Certifique-se de estar no diretório do projeto DevBank no VS Code ao iniciar o desenvolvimento.
+Agora você tem o ambiente configurado e está pronto para executar e testar o projeto DevBank usando o VS Code e o Insomnia. Certifique-se de estar no diretório do projeto DevBank no terminal para executar os comandos relacionados à API.
 
 
 
