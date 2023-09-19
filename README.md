@@ -68,7 +68,7 @@ O projeto DevBank segue os princípios do padrão REST, que inclui a utilizaçã
     Primeiro, você precisa clonar o repositório DevBank para o seu computador. Abra o terminal do VS Code e execute o seguinte comando:
     
     ```bash
-    git clone https://github.com/seu-usuario/devbank.git
+    git clone https://github.com/JonathanBarr0s/DevBank.git
     ```
     
     Isso irá criar uma cópia do repositório na sua máquina.
