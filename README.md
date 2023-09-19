@@ -39,3 +39,18 @@ Para garantir uma comunicação eficaz entre a API e os clientes, foram utilizad
 ### **Padrão REST**
 
 O projeto DevBank segue os princípios do padrão REST, que inclui a utilização de endpoints claramente definidos para cada recurso, ações consistentes baseadas em verbos HTTP e o uso de códigos de status adequados para indicar o resultado das operações. Isso torna a API fácil de entender, manter e expandir.
+
+
+
+
+
+## Contribuição
+Contribuições são bem-vindas! Se você quiser contribuir para este projeto, siga as etapas abaixo:
+1. Faça um fork do repositório
+2. Crie uma nova branch: `git checkout -b minha-branch`
+3. Faça suas alterações e faça commit: `git commit -m "Minhas alterações"`
+4. Faça push para o repositório remoto: `git push origin minha-branch`
+5. Envie um Pull Request
+
+## Licença
+Este projeto está licenciado sob a licença nenhuma
