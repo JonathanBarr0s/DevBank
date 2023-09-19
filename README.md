@@ -55,7 +55,7 @@ Aqui estão os passos para configurar o ambiente e executar o projeto DevBank:
     Após a instalação, você pode importar as configurações de ambiente e as requisições do projeto DevBank para o Insomnia.
     
     - Abra o Insomnia.
-    - No menu superior, vá em "File" -> "Import/Export" -> "Import Data" -> "From File".
+    - No menu superior direito, clique no +, vá em "Import".
     - Navegue até o diretório do projeto DevBank e selecione o arquivo **`insomnia_export.json`**.
     - As configurações e requisições do projeto serão importadas.
 3. **Clone o Repositório:**
