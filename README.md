@@ -114,8 +114,23 @@ Aqui estão os passos para configurar o ambiente e executar o projeto DevBank:
 
 Agora você tem o ambiente configurado e está pronto para executar e testar o projeto DevBank usando o VS Code e o Insomnia. Certifique-se de estar no diretório do projeto DevBank no terminal para executar os comandos relacionados à API.
 
+## Uso
 
+<div align="center">
 
+| Método | Rota                                   | Descrição                                        |
+| ------ | -------------------------------------- | ------------------------------------------------ |
+| GET    | `/contas?senha_banco=Dev123Bank`      | Listar Contas Bancárias                         |
+| POST   | `/contas`                              | Criar Conta Bancária                            |
+| PUT    | `/contas/:numeroConta/usuario`         | Atualizar Usuário da Conta Bancária             |
+| DELETE | `/contas/:numeroConta`                 | Excluir Conta                                   |
+| POST   | `/transacoes/depositar`               | Depositar                                       |
+| POST   | `/transacoes/sacar`                   | Sacar                                           |
+| POST   | `/transacoes/transferir`              | Transferir                                      |
+| GET    | `/contas/saldo?numero_conta=123&senha=123` | Consultar Saldo                             |
+| GET    | `/contas/extrato?numero_conta=123&senha=123` | Emitir Extrato Bancário                   |
+
+<div align="left">
 
 
 
