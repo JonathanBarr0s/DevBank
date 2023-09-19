@@ -22,9 +22,9 @@ O DevBank é um Banco Digital que oferece uma API RESTful com os seguintes recur
 
 Para alcançar os objetivos do projeto, foram utilizadas tecnologias e práticas de desenvolvimento de APIs RESTful. Algumas das tecnologias e conceitos empregados incluem:
 
-1. **Node.js**: A API foi desenvolvida em Node.js, uma plataforma de código aberto para execução de JavaScript no servidor, que permite a construção de aplicações escaláveis e eficientes.
-2. **Express.js**: O framework Express.js foi utilizado para simplificar a criação das rotas da API, gerenciar middlewares e facilitar o tratamento das requisições HTTP.
-3. **JSON**: O formato JSON (JavaScript Object Notation) é amplamente utilizado para a troca de dados entre a API e os clientes, devido à sua simplicidade e facilidade de leitura.
+1. **Node.js**: A API foi desenvolvida em Node.js, uma plataforma de código aberto para execução de JavaScript no servidor;
+2. **Express.js**: O framework Express.js foi utilizado para simplificar a criação das rotas da API, gerenciar middlewares e facilitar o tratamento das requisições HTTP;
+3. **JSON**: O formato JSON (JavaScript Object Notation) é amplamente utilizado para a troca de dados entre a API e os clientes, devido à sua simplicidade e facilidade de leitura;
 4. **REST (Representational State Transfer)**: A API segue o padrão REST, que define um conjunto de princípios para a criação de serviços web escaláveis e flexíveis. Isso inclui o uso adequado de verbos HTTP (GET, POST, PUT, DELETE) e a organização dos recursos em endpoints.
 
 ### **Códigos de Requisição HTTP**
