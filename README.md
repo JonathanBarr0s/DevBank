@@ -31,13 +31,11 @@ Para alcançar os objetivos do projeto, foram utilizadas tecnologias e práticas
 
 Para garantir uma comunicação eficaz entre a API e os clientes, foram utilizados os seguintes códigos de requisição HTTP:
 
-- **GET**: Utilizado para recuperar informações de contas bancárias, saldos, extratos e listar contas existentes.
-- **POST**: Usado para criar novas contas bancárias, realizar depósitos, saques e transferências, bem como atualizar os dados do usuário da conta.
-- **PUT**: Empregado para atualizar os dados do usuário da conta bancária.
+- **GET**: Utilizado para recuperar informações de contas bancárias, saldos, extratos e listar contas existentes;
+- **POST**: Usado para criar novas contas bancárias, realizar depósitos, saques e transferências, bem como atualizar os dados do usuário da conta;
+- **PUT**: Empregado para atualizar os dados do usuário da conta bancária;
 - **DELETE**: Utilizado para excluir uma conta bancária existente.
 
 ### **Padrão REST**
 
 O projeto DevBank segue os princípios do padrão REST, que inclui a utilização de endpoints claramente definidos para cada recurso, ações consistentes baseadas em verbos HTTP e o uso de códigos de status adequados para indicar o resultado das operações. Isso torna a API fácil de entender, manter e expandir.
-
-Em resumo, o objetivo do projeto DevBank é criar uma API bancária eficiente e segura, seguindo as melhores práticas de desenvolvimento de APIs RESTful. Com a base estabelecida neste projeto piloto, será possível adicionar novas funcionalidades e melhorias no futuro, atendendo às necessidades de um banco digital em constante evolução.
