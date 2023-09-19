@@ -100,11 +100,11 @@ Após seguir esses passos, você estará pronto para iniciar o desenvolvimento e
 
 ## Contribuição
 Contribuições são bem-vindas! Se você quiser contribuir para este projeto, siga as etapas abaixo:
-1. Faça um fork do repositório
-2. Crie uma nova branch: `git checkout -b minha-branch`
-3. Faça suas alterações e faça commit: `git commit -m "Minhas alterações"`
-4. Faça push para o repositório remoto: `git push origin minha-branch`
-5. Envie um Pull Request
+1. Faça um fork do repositório;
+2. Crie uma nova branch: `git checkout -b minha-branch`;
+3. Faça suas alterações e faça commit: `git commit -m "Minhas alterações"`;
+4. Faça push para o repositório remoto: `git push origin minha-branch`;
+5. Envie um Pull Request.
 
 ## Licença
-Este projeto está licenciado sob a licença nenhuma
+Este projeto está licenciado sob a licença nenhuma.
