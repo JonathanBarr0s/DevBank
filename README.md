@@ -46,7 +46,7 @@ Aqui estão os passos para configurar o ambiente e executar o projeto DevBank:
 
 1. **Instale o Visual Studio Code:**
     
-    O Visual Studio Code (VS Code) é um ambiente de desenvolvimento altamente recomendado para trabalhar com o código-fonte do projeto DevBank. Você pode baixá-lo em **[code.visualstudio.com](https://code.visualstudio.com/)**.
+    O Visual Studio Code (VS Code) é um ambiente de desenvolvimento recomendado para trabalhar com o código-fonte do projeto DevBank. Você pode baixá-lo em **[code.visualstudio.com](https://code.visualstudio.com/)**.
     
 2. **Instale o Insomnia:**
     
