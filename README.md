@@ -116,7 +116,7 @@ Agora você tem o ambiente configurado e está pronto para executar e testar o p
 
 ## Uso
 
-Aqui estão todas as atividades que realizei durante o curso divididas em módulos:
+Aqui está uma lista das rotas da API:
 
 <div align="center">
 
