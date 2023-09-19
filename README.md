@@ -60,7 +60,7 @@ Aqui estão os passos para configurar o ambiente e executar o projeto DevBank:
     - As configurações e requisições do projeto serão importadas.
 3. **Clone o Repositório:**
     
-    Para obter o código-fonte do projeto DevBank no seu computador, siga estas etapas:
+    Para obter o código-fonte do projeto DevBank no seu computador, execute o comando abaixo no terminal do VS Code:
     
     ```bash
     git clone https://github.com/JonathanBarr0s/DevBank.git
