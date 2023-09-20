@@ -367,10 +367,10 @@ Este endpoint permite listar as transações realizadas em uma conta bancária.
 - **Requisição:**
     - Método: GET
     - URL: **`http://localhost:3000/contas/extrato?numero_conta=123&senha=senha123`**
-        - Certifique-se de substituir **`http://localhost:3000`** pela URL real do servidor.
     - Query Params:
-        - **`numero_conta`**: Número da conta (obrigatório)
-        - **`senha`**: Senha da conta (obrigatório)
+        - **`numero_conta`**: Certifique-se de substituir **`123`** pelo número da conta que deseja ver o extrato (obrigatório)
+        - **`senha`**: Certifique-se de substituir **`123`** pela senha da conta que deseja ver o extrato (obrigatório)
+
 - **Resposta:**
     - Status Code:
         - 200 OK (em caso de sucesso)
