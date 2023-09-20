@@ -416,7 +416,7 @@ Este endpoint permite listar as transações realizadas em uma conta bancária.
 Lembre-se de substituir as URLs e valores de exemplo pelos valores reais ao usar a API DevBank em seu ambiente. Certifique-se de seguir as validações e requisitos especificados em cada endpoint para garantir o funcionamento adequado da API.
         
 <p align="center">
-  <img src="https://github.com/JonathanBarr0s/DevBank/assets/132490863/53dfe329-6bd8-4894-a871-32c769117247">
+  <img src="https://github.com/JonathanBarr0s/DevBank/assets/132490863/65d62810-54c7-4dc6-a572-4f6b9b0e46ea">
 </p>
 
 ###### *Obs.: Para melhor visualização do GIF, clique sobre ele com o botão direito do mouse > Abrir imagem em uma nova guia.*
