@@ -177,7 +177,7 @@ Este endpoint permite atualizar os dados do usuário de uma conta bancária.
 - **Requisição:**
     - Método: PUT
     - URL: **`http://localhost:3000/contas/123/usuario`**
-        - Certifique-se de substituir **`http://localhost:3000`** pela URL real do servidor e **`123`** pelo número da conta que deseja atualizar.
+        - Certifique-se de substituir **`123`** pelo número da conta que deseja atualizar.
     - Corpo da Requisição (JSON):
         
         ```json
