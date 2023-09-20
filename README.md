@@ -315,6 +315,8 @@ Este endpoint permite realizar uma transferência entre duas contas bancárias.
           "valor": 75.00,
           "senha": "senha123"
         }
+
+        // todos os campos são obrigatórios.
         ```
         
 - **Resposta:**
