@@ -114,7 +114,305 @@ Aqui estão os passos para configurar o ambiente e executar o projeto DevBank:
 
 Agora você tem o ambiente configurado e está pronto para executar e testar o projeto DevBank usando o VS Code e o Insomnia. Certifique-se de estar no diretório do projeto DevBank no terminal para executar os comandos relacionados à API.
 
-## Uso
+## Uso da API DevBank
+
+### **Listar contas bancárias**
+
+**Endpoint:** **`GET /contas?senha_banco=Dev123Bank`**
+
+Este endpoint permite listar todas as contas bancárias existentes.
+
+- **Requisição:**
+    - Método: GET
+    - URL: `**http://localhost:3000/contas?senha_banco=Dev123Bank**`
+    - Query Params:
+        - **`senha_banco`**: Senha do banco (obrigatório)
+- **Resposta:**
+    - Status Code: 200 OK
+    - Corpo da Resposta: Lista de todas as contas bancárias existentes
+
+### **Criar conta bancária**
+
+**Endpoint:** **`POST /contas`**
+
+Este endpoint permite criar uma nova conta bancária.
+
+- **Requisição:**
+    - Método: POST
+    - URL: **`http://localhost:3000/contas`**
+    - Corpo da Requisição (JSON):
+        
+        ```json
+        {
+          "nome": "Nome do Titular",
+          "cpf": "12345678900",
+          "data_nascimento": "1990-01-01",
+          "telefone": "11987654321",
+          "email": "titular@exemplo.com",
+          "senha": "senha123"
+        }
+        
+        // todos os campos são obrigatórios.
+        ```
+        
+- **Resposta:**
+    - Status Code:
+        - 201 Created (em caso de sucesso)
+        - 400 Bad Request (em caso de falha na validação)
+    - Corpo da Resposta (em caso de falha na validação):
+        
+        ```json
+        {
+          "mensagem": "Motivo da falha na validação"
+        }
+        ```
+        
+
+### **Atualizar usuário da conta bancária**
+
+**Endpoint:** **`PUT /contas/:numeroConta/usuario`**
+
+Este endpoint permite atualizar os dados do usuário de uma conta bancária.
+
+- **Requisição:**
+    - Método: PUT
+    - URL: **`http://localhost:3000/contas/123/usuario`**
+        - Certifique-se de substituir **`http://localhost:3000`** pela URL real do servidor e **`123`** pelo número da conta que deseja atualizar.
+    - Corpo da Requisição (JSON):
+        
+        ```json
+        {
+          "nome": "Novo Nome do Titular",
+          "cpf": "987.654.321-00",
+          "data_nascimento": "1995-02-15",
+          "telefone": "(11) 98765-5432",
+          "email": "novo@exemplo.com",
+          "senha": "novasenha456"
+        }
+        
+        // todos os campos são obrigatórios.
+        ```
+        
+- **Resposta:**
+    - Status Code:
+        - 200 OK (em caso de sucesso)
+        - 400 Bad Request (em caso de falha na validação)
+    - Corpo da Resposta (em caso de falha na validação):
+        
+        ```json
+        {
+          "mensagem": "Motivo da falha na validação"
+        }
+        ```
+        
+
+### **Excluir Conta**
+
+**Endpoint:** **`DELETE /contas/:numeroConta`**
+
+Este endpoint permite excluir uma conta bancária existente.
+
+- **Requisição:**
+    - Método: DELETE
+    - URL: **`http://localhost:3000/contas/123`**
+        - Certifique-se de substituir **`http://localhost:3000`** pela URL real do servidor e **`123`** pelo número da conta que deseja excluir.
+- **Resposta:**
+    - Status Code:
+        - 204 No Content (em caso de sucesso)
+        - 400 Bad Request (em caso de falha na validação)
+    - Corpo da Resposta (em caso de falha na validação):
+        
+        ```json
+        {
+          "mensagem": "Motivo da falha na validação"
+        }
+        ```
+        
+
+### **Depositar**
+
+**Endpoint:** **`POST /transacoes/depositar`**
+
+Este endpoint permite realizar um depósito em uma conta bancária.
+
+- **Requisição:**
+    - Método: POST
+    - URL: **`http://localhost:3000/transacoes/depositar`**
+        - Certifique-se de substituir **`http://localhost:3000`** pela URL real do servidor.
+    - Corpo da Requisição (JSON): Certifique-se de fornecer o número da conta e um valor válido (não negativo e não zerado).
+        
+        ```json
+        {
+          "numero_conta": "123",
+          "valor": 100
+        }
+        
+        // todos os campos são obrigatórios.
+        ```
+        
+- **Resposta:**
+    - Status Code:
+        - 200 OK (em caso de sucesso)
+        - 400 Bad Request (em caso de falha na validação)
+    - Corpo da Resposta (em caso de falha na validação):
+        
+        ```json
+        {
+          "mensagem": "Motivo da falha na validação"
+        }
+        ```
+        
+
+### **Sacar**
+
+**Endpoint:** **`POST /transacoes/sacar`**
+
+Este endpoint permite realizar um saque em uma conta bancária.
+
+- **Requisição:**
+    - Método: POST
+    - URL: **`http://localhost:3000/transacoes/sacar`**
+    - Corpo da Requisição (JSON): Certifique-se de fornecer o número da conta, um valor válido (não negativo e não zerado) e a senha da conta.
+        
+        ```json
+        {
+          "numero_conta": "123",
+          "valor": 50.00,
+          "senha": "senha123"
+        }
+        
+        // todos os campos são obrigatórios.
+        ```
+        
+- **Resposta:**
+    - Status Code:
+        - 200 OK (em caso de sucesso)
+        - 400 Bad Request (em caso de falha na validação)
+    - Corpo da Resposta (em caso de falha na validação):
+        
+        ```json
+        {
+          "mensagem": "Motivo da falha na validação"
+        }
+        ```
+        
+
+### **Transferir**
+
+**Endpoint:** **`POST /transacoes/transferir`**
+
+Este endpoint permite realizar uma transferência entre duas contas bancárias.
+
+- **Requisição:**
+    - Método: POST
+    - URL: **`http://localhost:3000/transacoes/transferir`**
+        - Certifique-se de substituir **`http://localhost:3000`** pela URL real do servidor.
+    - Corpo da Requisição (JSON):Certifique-se de fornecer o número da conta de origem, o número da conta de destino, um valor válido (não negativo e não zerado) e a senha da conta de origem.
+        
+        ```json
+        {
+          "numero_conta_origem": "123",
+          "numero_conta_destino": "456",
+          "valor": 75.00,
+          "senha": "senha123"
+        }
+        ```
+        
+- **Resposta:**
+    - Status Code:
+        - 200 OK (em caso de sucesso)
+        - 400 Bad Request (em caso de falha na validação)
+    - Corpo da Resposta (em caso de falha na validação):
+        
+        ```json
+        {
+          "mensagem": "Motivo da falha na validação"
+        }
+        ```
+        
+
+### **Saldo**
+
+**Endpoint:** **`GET /contas/saldo?numero_conta=123&senha=senha123`**
+
+Este endpoint permite consultar o saldo de uma conta bancária.
+
+- **Requisição:**
+    - Método: GET
+    - URL: **`http://localhost:3000/contas/saldo?numero_conta=123&senha=senha123`**
+        - Certifique-se de substituir **`http://localhost:3000`** pela URL real do servidor.
+    - Query Params:
+        - **`numero_conta`**: Número da conta (obrigatório)
+        - **`senha`**: Senha da conta (obrigatório)
+- **Resposta:**
+    - Status Code:
+        - 200 OK (em caso de sucesso)
+        - 400 Bad Request (em caso de falha na validação)
+    - Corpo da Resposta (em caso de sucesso):O saldo da conta será retornado.
+        
+        ```json
+        {
+          "saldo": 500.00
+        }
+        ```
+        
+
+### **Extrato**
+
+**Endpoint:** **`GET /contas/extrato?numero_conta=123&senha=senha123`**
+
+Este endpoint permite listar as transações realizadas em uma conta bancária.
+
+- **Requisição:**
+    - Método: GET
+    - URL: **`http://localhost:3000/contas/extrato?numero_conta=123&senha=senha123`**
+        - Certifique-se de substituir **`http://localhost:3000`** pela URL real do servidor.
+    - Query Params:
+        - **`numero_conta`**: Número da conta (obrigatório)
+        - **`senha`**: Senha da conta (obrigatório)
+- **Resposta:**
+    - Status Code:
+        - 200 OK (em caso de sucesso)
+        - 400 Bad Request (em caso de falha na validação)
+    - Corpo da Resposta (em caso de sucesso):Um relatório com as transações da conta será retornado, incluindo depósitos, saques e transferências.
+        
+        ```json
+        {
+        	"depositos": [
+        		{
+        			"data": "2023-09-19 21:04:57",
+        			"numero_conta": "1",
+        			"valor": 500
+        		},
+        		{
+        			"data": "2023-09-19 21:04:57",
+        			"numero_conta": "1",
+        			"valor": 500
+        		}
+        	],
+        	"saques": [
+        		{
+        			"data": "2023-09-19 21:05:01",
+        			"numero_conta": "1",
+        			"valor": 500
+        		}
+        	],
+        	"transferenciasEnviadas": [
+        		{
+        			"data": "2023-09-19 21:05:12",
+        			"numero_conta_origem": "1",
+        			"numero_conta_destino": "2",
+        			"valor": 20
+        		}
+        	],
+        	"transferenciasRecebidas": []
+        }
+        ```
+        
+
+Lembre-se de substituir as URLs e valores de exemplo pelos valores reais ao usar a API DevBank em seu ambiente. Certifique-se de seguir as validações e requisitos especificados em cada endpoint para garantir o funcionamento adequado da API.
+
+## Rotas
 
 Aqui está uma lista das rotas da API:
 
