@@ -183,9 +183,9 @@ Este endpoint permite atualizar os dados do usuário de uma conta bancária.
         ```json
         {
           "nome": "Novo Nome do Titular",
-          "cpf": "987.654.321-00",
+          "cpf": "98765432100",
           "data_nascimento": "1995-02-15",
-          "telefone": "(11) 98765-5432",
+          "telefone": "11987655432",
           "email": "novo@exemplo.com",
           "senha": "novasenha456"
         }
