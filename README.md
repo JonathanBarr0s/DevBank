@@ -306,7 +306,6 @@ Este endpoint permite realizar uma transferência entre duas contas bancárias.
 - **Requisição:**
     - Método: POST
     - URL: **`http://localhost:3000/transacoes/transferir`**
-        - Certifique-se de substituir **`http://localhost:3000`** pela URL real do servidor.
     - Corpo da Requisição (JSON):Certifique-se de fornecer o número da conta de origem, o número da conta de destino, um valor válido (não negativo e não zerado) e a senha da conta de origem.
         
         ```json
