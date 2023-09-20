@@ -238,7 +238,6 @@ Este endpoint permite realizar um depósito em uma conta bancária.
 - **Requisição:**
     - Método: POST
     - URL: **`http://localhost:3000/transacoes/depositar`**
-        - Certifique-se de substituir **`http://localhost:3000`** pela URL real do servidor.
     - Corpo da Requisição (JSON): Certifique-se de fornecer o número da conta e um valor válido (não negativo e não zerado).
         
         ```json
