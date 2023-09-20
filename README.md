@@ -1,6 +1,6 @@
 # DevBank - API de Banco Digital
 
-## Descrição
+## 1. Descrição
 
 O DevBank é um projeto piloto de criação de uma API para um Banco Digital. Este projeto visa oferecer funcionalidades essenciais de um banco, com a perspectiva de expansão para incluir recursos adicionais no futuro. A API é desenvolvida com base em princípios RESTful e todas as informações são armazenadas em memória, utilizando o objeto existente no arquivo **`bancodedados.js`**. É importante destacar que os dados fundamentais do banco, como nome e agência, permanecem imutáveis durante a execução deste projeto.
 
@@ -18,7 +18,7 @@ O DevBank é um Banco Digital que oferece uma API RESTful com os seguintes recur
 
 **Status do Projeto:** Concluído e funcionando perfeitamente.
 
-## Objetivo
+## 2. Objetivo
 
 Para alcançar os objetivos do projeto, foram utilizadas tecnologias e práticas de desenvolvimento de APIs RESTful. Algumas das tecnologias e conceitos empregados incluem:
 
@@ -27,7 +27,7 @@ Para alcançar os objetivos do projeto, foram utilizadas tecnologias e práticas
 3. **JSON**: O formato JSON (JavaScript Object Notation) é amplamente utilizado para a troca de dados entre a API e os clientes, devido à sua simplicidade e facilidade de leitura;
 4. **REST (Representational State Transfer)**: A API segue o padrão REST, que define um conjunto de princípios para a criação de serviços web escaláveis e flexíveis. Isso inclui o uso adequado de verbos HTTP (GET, POST, PUT, DELETE) e a organização dos recursos em endpoints.
 
-### **Códigos de Requisição HTTP**
+### 2.1 **Códigos de Requisição HTTP**
 
 Para garantir uma comunicação eficaz entre a API e os clientes, foram utilizados os seguintes códigos de requisição HTTP:
 
@@ -36,11 +36,11 @@ Para garantir uma comunicação eficaz entre a API e os clientes, foram utilizad
 - **PUT**: Empregado para atualizar os dados do usuário da conta bancária;
 - **DELETE**: Utilizado para excluir uma conta bancária existente.
 
-### **Padrão REST**
+### 2.2 **Padrão REST**
 
 O projeto DevBank segue os princípios do padrão REST, que inclui a utilização de endpoints claramente definidos para cada recurso, ações consistentes baseadas em verbos HTTP e o uso de códigos de status adequados para indicar o resultado das operações. Isso torna a API fácil de entender, manter e expandir.
 
-## Instalação
+## 3. Instalação
 
 Aqui estão os passos para configurar o ambiente e executar o projeto DevBank:
 
@@ -114,9 +114,9 @@ Aqui estão os passos para configurar o ambiente e executar o projeto DevBank:
 
 Agora você tem o ambiente configurado e está pronto para executar e testar o projeto DevBank usando o VS Code e o Insomnia. Certifique-se de estar no diretório do projeto DevBank no terminal para executar os comandos relacionados à API.
 
-## Uso da API DevBank
+## 4. Uso da API DevBank
 
-### **Listar contas bancárias**
+### 4.1 **Listar contas bancárias**
 
 **Endpoint:** **`GET /contas?senha_banco=Dev123Bank`**
 
@@ -131,7 +131,7 @@ Este endpoint permite listar todas as contas bancárias existentes.
     - Status Code: 200 OK
     - Corpo da Resposta: Lista de todas as contas bancárias existentes
 
-### **Criar conta bancária**
+### 4.2 **Criar conta bancária**
 
 **Endpoint:** **`POST /contas`**
 
@@ -168,7 +168,7 @@ Este endpoint permite criar uma nova conta bancária.
         ```
         
 
-### **Atualizar usuário da conta bancária**
+### 4.3 **Atualizar usuário da conta bancária**
 
 **Endpoint:** **`PUT /contas/:numeroConta/usuario`**
 
@@ -206,7 +206,7 @@ Este endpoint permite atualizar os dados do usuário de uma conta bancária.
         ```
         
 
-### **Excluir Conta**
+### 4.4 **Excluir Conta**
 
 **Endpoint:** **`DELETE /contas/:numeroConta`**
 
@@ -229,7 +229,7 @@ Este endpoint permite excluir uma conta bancária existente.
         ```
         
 
-### **Depositar**
+### 4.5 **Depositar**
 
 **Endpoint:** **`POST /transacoes/depositar`**
 
@@ -263,7 +263,7 @@ Este endpoint permite realizar um depósito em uma conta bancária.
         ```
         
 
-### **Sacar**
+### 4.6 **Sacar**
 
 **Endpoint:** **`POST /transacoes/sacar`**
 
@@ -297,7 +297,7 @@ Este endpoint permite realizar um saque em uma conta bancária.
         ```
         
 
-### **Transferir**
+### 4.7 **Transferir**
 
 **Endpoint:** **`POST /transacoes/transferir`**
 
@@ -331,7 +331,7 @@ Este endpoint permite realizar uma transferência entre duas contas bancárias.
         ```
         
 
-### **Saldo**
+### 4.8 **Saldo**
 
 **Endpoint:** **`GET /contas/saldo?numero_conta=123&senha=senha123`**
 
@@ -357,7 +357,7 @@ Este endpoint permite consultar o saldo de uma conta bancária.
         ```
         
 
-### **Extrato**
+### 4.9 **Extrato**
 
 **Endpoint:** **`GET /contas/extrato?numero_conta=123&senha=senha123`**
 
@@ -412,7 +412,7 @@ Este endpoint permite listar as transações realizadas em uma conta bancária.
 
 Lembre-se de substituir as URLs e valores de exemplo pelos valores reais ao usar a API DevBank em seu ambiente. Certifique-se de seguir as validações e requisitos especificados em cada endpoint para garantir o funcionamento adequado da API.
 
-## Rotas
+## 5. Rotas
 
 Aqui está uma lista das rotas da API:
 
@@ -434,7 +434,7 @@ Aqui está uma lista das rotas da API:
 
 
 
-## Contribuição
+## 6. Contribuição
 Contribuições são bem-vindas! Se você quiser contribuir para este projeto, siga as etapas abaixo:
 1. Faça um fork do repositório;
 2. Crie uma nova branch: `git checkout -b minha-branch`;
