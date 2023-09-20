@@ -110,14 +110,13 @@ Aqui estão os passos para configurar o ambiente e executar o projeto DevBank:
     ```
     
     O Nodemon será responsável por reiniciar automaticamente o servidor sempre que você fizer alterações no código, facilitando o processo de desenvolvimento.
-    
-
-Agora você tem o ambiente configurado e está pronto para executar e testar o projeto DevBank usando o VS Code e o Insomnia. Certifique-se de estar no diretório do projeto DevBank no terminal para executar os comandos relacionados à API.
 
 <p align="center">
   <img src="https://github.com/JonathanBarr0s/DevBank/assets/132490863/4e27ff35-bf69-482b-a95d-989bbc5109d4">
 </p>
-<br>
+
+
+Agora você tem o ambiente configurado e está pronto para executar e testar o projeto DevBank usando o VS Code e o Insomnia. Certifique-se de estar no diretório do projeto DevBank no terminal para executar os comandos relacionados à API.
 
 ## 4. Uso da API DevBank
 
