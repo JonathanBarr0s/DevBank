@@ -341,7 +341,6 @@ Este endpoint permite consultar o saldo de uma conta bancária.
 - **Requisição:**
     - Método: GET
     - URL: **`http://localhost:3000/contas/saldo?numero_conta=123&senha=senha123`**
-        - Certifique-se de substituir **`http://localhost:3000`** pela URL real do servidor.
     - Query Params:
         - **`numero_conta`**: Certifique-se de substituir **`123`** pelo número da conta que deseja ver o saldo (obrigatório)
         - **`senha`**: Certifique-se de substituir **`123`** pelo número da conta que deseja ver o saldo (obrigatório)
