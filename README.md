@@ -215,7 +215,7 @@ Este endpoint permite excluir uma conta bancária existente.
 - **Requisição:**
     - Método: DELETE
     - URL: **`http://localhost:3000/contas/123`**
-        - Certifique-se de substituir **`http://localhost:3000`** pela URL real do servidor e **`123`** pelo número da conta que deseja excluir.
+        - Certifique-se de substituir **`123`** pelo número da conta que deseja excluir.
 - **Resposta:**
     - Status Code:
         - 204 No Content (em caso de sucesso)
